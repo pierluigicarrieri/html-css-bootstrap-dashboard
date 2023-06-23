@@ -1,0 +1,22 @@
+* {
+    border: 1px dashed red;
+}
+
+body {
+    height: 100vh;
+}
+
+#mobile_logo {
+    width: 50px;
+}
+
+main {
+    background-color: aqua;
+}
+
+#nav_left {
+    background-image: url("/img/sidebar-bg.png");
+    background-size: cover;
+}
+
+
