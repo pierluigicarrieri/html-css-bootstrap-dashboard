@@ -10,9 +10,13 @@ body {
     width: 50px;
 }
 
-#nav_left {
+#sidebar_left {
     background-image: url("/img/sidebar-bg.png");
     background-size: cover;
+}
+
+[class*="col-"], .col {
+    height: 100px;
 }
 
 
