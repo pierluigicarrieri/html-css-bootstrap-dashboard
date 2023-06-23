@@ -10,10 +10,6 @@ body {
     width: 50px;
 }
 
-main {
-    background-color: aqua;
-}
-
 #nav_left {
     background-image: url("/img/sidebar-bg.png");
     background-size: cover;
