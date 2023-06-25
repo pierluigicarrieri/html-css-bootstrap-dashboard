@@ -1,6 +1,10 @@
+/* Variables */
+
 :root {
     --dark-blue: #155BBA;
 }
+
+/* Tag level selectors */
 
 body {
     height: 100vh;
@@ -14,6 +18,8 @@ body {
     background-color: var(--dark-blue);
 }
 
+/* Id's */
+
 #mobile_logo {
     width: 50px;
 }
@@ -23,6 +29,8 @@ body {
     background-image: url("/img/sidebar-bg.png");
     background-size: cover;
 }
+
+/* Media queries */
 
 @media screen and (min-width: 992px) {
 
