@@ -9,7 +9,7 @@
     <title>html-css-bootstrap-dashboard</title>
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column overflow-hidden">
 
     <!-- Top navbar -->
     
@@ -49,7 +49,7 @@
         </div>
     </nav>
 
-    <main class="d-flex flex-grow-1">
+    <main class="d-flex flex-grow-1 overflow-hidden">
 
         <!-- Left sidebar -->
 
@@ -86,7 +86,7 @@
         </ul>
 
 
-        <div class="d-flex flex-column flex-grow-1">
+        <div class="d-flex flex-column flex-grow-1 overflow-auto">
 
             <!-- Main top navbar -->
 
@@ -227,27 +227,32 @@
 
                             <div class="card mb-4">
 
-                                <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                <div class="card m-3">
 
-                                <div class="card-body">
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="stats">
 
-                                    <h5 class="card-title">Card title</h5>
+                                    <div class="card-body">
 
-                                    <p class="card-text">Some quick example text.</p>
+                                        <h5 class="card-title">Card title</h5>
+
+                                        <p class="card-text">Some quick example text.</p>
+
+                                    </div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+
+                                    <div class="card-body">
+
+                                        <a href="#" class="card-link">Card link</a>
+
+                                    </div>
 
                                 </div>
 
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                </ul>
-
-                                <div class="card-body">
-
-                                    <a href="#" class="card-link">Card link</a>
-
-                                </div>
                             </div>
 
                         </div>
