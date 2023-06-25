@@ -32,6 +32,10 @@ body {
 
 /* Other selectors */
 
+#sidebar_left li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 table img {
     width: 30px;
 }
