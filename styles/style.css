@@ -1,9 +1,17 @@
-* {
-    border: 1px dashed red;
+:root {
+    --dark-blue: #155BBA;
 }
 
 body {
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Utility classes */
+
+.bg_dark_blue {
+    background-color: var(--dark-blue);
 }
 
 #mobile_logo {
@@ -11,12 +19,18 @@ body {
 }
 
 #sidebar_left {
+    width: 70px;
     background-image: url("/img/sidebar-bg.png");
     background-size: cover;
 }
 
-[class*="col-"], .col {
-    height: 100px;
+@media screen and (min-width: 992px) {
+
+    #sidebar_left {
+        width: 130px;
+    }
+    
 }
+
 
 

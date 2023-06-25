@@ -11,7 +11,7 @@
 
 <body class="d-flex flex-column">
 
-    <!-- Top sidebar -->
+    <!-- Top navbar -->
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -54,49 +54,110 @@
         <!-- Left sidebar -->
 
         <ul id="sidebar_left" class="nav flex-column align-items-center bg-dark">
+
             <li class="nav-item">
                 <a class="nav-link link-light" aria-current="page" href="#">
                     <i class="fa-solid fa-house"></i>
                     <span class="d-none d-lg-inline ps-2">Home</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link link-light" href="#">
                     <i class="fa-solid fa-chart-simple"></i>
                     <span class="d-none d-lg-inline ps-2">Stats</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link link-light" href="#">
                     <i class="fa-solid fa-signal"></i>
                     <span class="d-none d-lg-inline ps-2">Signals</span>
                 </a>
             </li>
-            <li class="nav-item mt-auto">
+
+            <li class="nav-item mb-4 mt-auto">
                 <a class="nav-link link-light">
                     <i class="fa-solid fa-gear"></i>
                     <span class="d-none d-lg-inline ps-2">Admin</span>
                 </a>
             </li>
+
         </ul>
 
 
         <div class="d-flex flex-column flex-grow-1">
 
-            <nav>
+            <!-- Main top navbar -->
 
-                <div class="container">
+            <nav class="text-bg-primary mb-4">
+
+                <div class="container-fluid">
 
                     <div class="row row-cols-1 row-cols-lg-2">
 
-                        <div class="col"></div>
+                        <div class="col">
+
+                            <div class="py-2">
+
+                                <h4 class="d-inline">Boolean</h4>
+
+                                <span class="badge rounded-pill bg_dark_blue">Piano blaze</span>
+
+                            </div>
+
+                            <div class="py-2"> 
+
+                                <span class="badge rounded-pill bg_dark_blue">3 app</span>
+
+                                <span class="badge rounded-pill bg_dark_blue">Boolean mobile app</span>
+
+                                <span class="badge rounded-pill bg_dark_blue">Boolean web app</span>
+
+                                <span class="badge rounded-pill bg_dark_blue">Boolean blog app</span>
+
+                            </div>
+
+                        </div>
 
                         <div class="col">
 
                             <div class="row">
 
-                                <div class="col-12 col-lg-6"></div>
-                                <div class="col-12 col-lg-6"></div>
+                                <div class="col-12 col-lg-6">
+
+                                    <div class="py-2">Studenti online negli ultimi 30 minuti</div>
+
+                                    <h4 class="py-2">125</h4>
+
+                                </div>
+
+
+                                <div class="col-12 col-lg-6 py-2">
+
+                                    <span>Nuovo Studente</span>
+
+                                    <!-- Start of offcanvas -->
+
+                                    <!-- Ofcanvas button -->
+
+                                    <button class="btn btn-sm btn-outline-light fs-4 px-2 py-0 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                        +
+                                    </button>
+
+                                    <!-- Offcanvas main -->
+
+                                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                        <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -108,14 +169,88 @@
 
             </nav>
 
+            <!-- Main section with cards -->
+
             <div class="flex-grow-1">
 
                 <div class="container">
 
                     <div class="row">
 
-                        <div class="col-12 col-lg-8"></div>
-                        <div class="col-12 col-lg-4"></div>
+                        <div class="col-12 col-lg-8">
+
+                            <div class="card mb-4">
+
+                                <div class="card-header">
+                                    <h4>Prossime classi</h4>
+                                </div>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="card mb-4">
+
+                                <div class="card-header">
+                                    <h5>F.A.Q.</h5>
+                                </div>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+
+                            <div class="card mb-4">
+
+                                <div class="card-header">
+                                    <h5>Todo</h5>
+                                </div>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="card mb-4">
+
+                                <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title">Card title</h5>
+
+                                    <p class="card-text">Some quick example text.</p>
+
+                                </div>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
 
