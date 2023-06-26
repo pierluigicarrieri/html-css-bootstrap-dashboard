@@ -13,40 +13,57 @@
 
     <!-- Top navbar -->
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img id="mobile_logo" src="img/mobile-logo.png" alt="logo"></a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <nav class="navbar navbar-expand bg-body-tertiary">
+
+        <div class="container-fluid d-flex">
+
+            <a class="navbar-brand" href="#">
+                <img id="mobile_logo" class="d-lg-none" src="img/mobile-logo.png" alt="logo_small">
+                <img id="large_logo" class="d-none d-lg-inline-block" src="img/logo.svg" alt="logo_large">
+            </a>
+
+            <form class="d-flex w-100" role="search">
+                <input class="form-control me-2" type="search" placeholder="&#128269; Prova a cercare: lezioni di Laravel" aria-label="Search">
             </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                <li class="nav-item d-none d-lg-inline">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fa-solid fa-list"></i>
+                    </a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+
+                <li class="nav-item d-none d-lg-inline">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </a>
                 </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+
+                <li class="nav-item d-none d-lg-inline">
+                    <a class="nav-link">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+
+                <li class="nav-item d-flex align-items-center px-2">
+                    <div class="dropstart">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </li>
+
             </ul>
-            </div>
+
         </div>
+
     </nav>
 
     <main class="d-flex flex-grow-1 overflow-hidden">
