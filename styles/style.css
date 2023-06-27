@@ -18,6 +18,10 @@ body {
     background-color: var(--dark-blue);
 }
 
+.offcanvas_size {
+    --bs-offcanvas-width: min(100vw) !important;
+}
+
 /* Id's */
 
 #mobile_logo {
@@ -63,7 +67,10 @@ table img {
     #sidebar_left {
         width: 130px;
     }
-    
+
+    .offcanvas_size_lg {
+    --bs-offcanvas-width: min(45vw, 600px) !important;
+    }
 }
 
 

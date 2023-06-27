@@ -113,6 +113,8 @@
 
                     <div class="row row-cols-1 row-cols-lg-2">
 
+                        <!-- Left side -->
+
                         <div class="col">
 
                             <div class="py-2">
@@ -127,15 +129,21 @@
 
                                 <span class="badge rounded-pill bg_dark_blue">3 app</span>
 
-                                <span class="badge rounded-pill bg_dark_blue">Boolean mobile app</span>
+                                <span><i class="fa-solid fa-angles-right"></i></span>
 
-                                <span class="badge rounded-pill bg_dark_blue">Boolean web app</span>
+                                <span class="d-lg-none badge rounded-pill bg_dark_blue">+</span>
 
-                                <span class="badge rounded-pill bg_dark_blue">Boolean blog app</span>
+                                <span class="d-none d-lg-inline-block badge rounded-pill bg_dark_blue">Boolean mobile app</span>
+
+                                <span class="d-none d-lg-inline-block badge rounded-pill bg_dark_blue">Boolean web app</span>
+
+                                <span class="d-none d-lg-inline-block badge rounded-pill bg_dark_blue">Boolean blog app</span>
 
                             </div>
 
                         </div>
+
+                        <!-- Right side -->
 
                         <div class="col">
 
@@ -164,14 +172,147 @@
 
                                     <!-- Offcanvas main -->
 
-                                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                    <div class="offcanvas offcanvas-end offcanvas_size offcanvas_size_lg" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                        
                                         <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
+
                                         <div class="offcanvas-body">
-                                        <p>Try scrolling the rest of the page to see this option in action.</p>
+
+                                            <!-- Name, surname -->
+
+                                            <div class="d-flex mb-3">
+                                            
+                                                <div class="w-50">
+                                                    <label for="basic-url" class="form-label">Nome</label>
+                                                    <div class="input-group">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                                <div class="w-50 ms-3">
+                                                    <label for="basic-url" class="form-label">Cognome</label>
+                                                    <div class="input-group">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Email, password -->
+
+                                            <div class="d-flex mb-3">
+
+                                                <div class="w-50">
+                                                    <label for="basic-url" class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon3">@</span>
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                                <div class="w-50 ms-3">
+                                                    <label for="basic-url" class="form-label">Password</label>
+                                                    <div class="input-group">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Email address, password -->
+
+                                            <div class="d-flex mb-3">
+
+                                                <div class="w-50">
+                                                    <label for="basic-url" class="form-label">Indirizzo email</label>
+                                                    <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon3">@</span>
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                                <div class="w-50 ms-3">
+                                                    <label for="basic-url" class="form-label">Password</label>
+                                                    <div class="input-group">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Home address -->
+
+                                            <div class="mb-3">
+                                                <label for="basic-url" class="form-label">Indirizzo</label>
+                                                <div class="input-group">
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+
+                                            <!-- City, state, zip code -->
+
+                                            <div class="d-flex mb-3">
+
+                                                <div class="w-50">
+                                                    <label for="basic-url" class="form-label">Città</label>
+                                                    <div class="input-group">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                                <div class="w-30 ms-3">
+                                                    <label for="basic-url" class="form-label">Stato</label>
+                                                    <div class="dropdown">
+                                                        <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Scegli...
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Iraq</a></li>
+                                                            <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                                                            <li><a class="dropdown-item" href="#">Albania</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w-20 ms-3">
+                                                    <label for="basic-url" class="form-label">CAP</label>
+                                                    <div class="input-group">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Picture -->
+
+                                            <div class="mb-3">
+                                                <label for="basic-url" class="form-label">Foto</label>
+                                                <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon3">Scegli file</span>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+
+                                            <!-- Bottom checkbox -->
+
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Seleziona per proseguire
+                                                </label>
+                                            </div>
+
+                                            <!-- Bottom buttons -->
+
+                                            <button type="button" class="btn btn-sm btn-primary">Salva</button>
+
+                                            <button type="button" class="btn btn-sm btn-warning">Svuota</button>
+
                                         </div>
+
                                     </div>
 
                                 </div>
